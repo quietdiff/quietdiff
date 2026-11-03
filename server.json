@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.quietdiff/quietdiff",
+  "title": "QuietDiff",
+  "description": "Monitor web pages for price, stock or text changes; low-noise alerts via MCP, API and webhooks.",
+  "version": "0.1.0",
+  "websiteUrl": "https://quietdiff.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://quietdiff.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer qd_... API key from Dashboard \u2192 Settings",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/quietdiff/quietdiff",
+    "source": "github"
+  }
+}
